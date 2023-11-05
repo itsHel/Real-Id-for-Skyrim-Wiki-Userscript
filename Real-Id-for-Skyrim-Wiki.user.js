@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name            Real Id for Skyrim Wiki
 // @version         1.0.0
-// @description     Replaces partial Id, at Skyrim Wikis, by their real Dawnguard/Hearthfire/Dragonborn Id
+// @description     Replaces partial Form IDs, at Skyrim Wikis, by their real Dawnguard/Hearthfire/Dragonborn Form IDs
 // @author          Hel
 // @match           https://en.uesp.net/wiki/Skyrim*
 // @match           https://elderscrolls.fandom.com/wiki/*
