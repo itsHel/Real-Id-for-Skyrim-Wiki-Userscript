@@ -6,6 +6,7 @@ In order to use this you need [Tampermonkey](https://chrome.google.com/webstore/
 ## Information
 - Works for https://en.uesp.net/wiki and https://elderscrolls.fandom.com/wiki
 - Some Form IDs are ignored
-- Not planning on doing this for AE as I don't think it has enforced load order
+- Not planning on doing this for AE as I don't think it has enforced load order  
+  
 ![Before/After](/comparsion.jpg)
 
