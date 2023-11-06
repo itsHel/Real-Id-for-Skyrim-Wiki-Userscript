@@ -12,8 +12,6 @@
     "use strict";
 
     try {
-        const pageTitle = document.querySelector(".mw-indicator:last-of-type a")?.title;
-
         if (location.origin == "https://en.uesp.net") {
             const pageReplacement = {
                 Dawnguard: "02",
@@ -31,6 +29,7 @@
                 "Skyrim:Dragonborn": "04",
             };
 
+            const pageTitle = document.querySelector(".mw-indicator:last-of-type a")?.title;
             if (pageReplacement[pageTitle]) {
                 replaceIdUesp(pageReplacement[pageTitle]);
             }
@@ -57,6 +56,7 @@
                 const root = parent ? parent : document;
 
                 root.querySelectorAll(".idref a").forEach((el) => {
+                    // Set parent width to make sure that page content won't move
                     const span = document.createElement("span");
                     const parentWidth = el.parentNode.getBoundingClientRect().width;
 
