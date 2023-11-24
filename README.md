@@ -3,10 +3,9 @@ Replaces partial Form IDs, at Skyrim Wikis, by their real Dawnguard/Hearthfire/D
 ## Install
 ### [Click to install](https://raw.githubusercontent.com/itsHel/Real-Id-for-Skyrim-Wiki-Userscript/main/Real-Id-for-Skyrim-Wiki.user.js)
 In order to use this you need [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) or similar userscript manager.
-## Information
+## Notes
 - Works for https://en.uesp.net/wiki and https://elderscrolls.fandom.com/wiki
-- I wasn't able to replace all Form IDs
-- Not planning on doing this for AE as I don't think it has enforced load order  
+- I wasn't able to replace all Form IDs  
 ## Example
 ![Before/After](/comparsion.jpg)
 
