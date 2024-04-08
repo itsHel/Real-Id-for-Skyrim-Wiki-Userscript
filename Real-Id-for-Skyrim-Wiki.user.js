@@ -43,7 +43,7 @@
             });
 
             document.querySelectorAll(".wikitable:not(.infobox)").forEach((el) => {
-                el.querySelectorAll("tr td:nth-of-type(2) sup").forEach((supEl) => {
+                el.querySelectorAll("tr td sup").forEach((supEl) => {
                     const supTitle = supEl.querySelector("a")?.title;
 
                     if (tableRowReplacement[supTitle]) {
@@ -53,7 +53,11 @@
             });
 
             function replaceIdUesp(newId, parent = null) {
-                const root = parent ? parent : document;
+                let root = parent ? parent : document;
+                if(!root.querySelector(".idref a")){
+                    // If couldn't find any IDs look to two parents upwards
+                    root = parent.parentNode.parentNode
+                }
 
                 root.querySelectorAll(".idref a").forEach((el) => {
                     // Set parent width to make sure that page content won't move
@@ -97,5 +101,5 @@
                 });
             }
         }
-    } catch (e) {}
+    } catch (e) {console.log(e)}
 })();
