@@ -55,8 +55,8 @@
             function replaceIdUesp(newId, parent = null) {
                 let root = parent ? parent : document;
                 if(!root.querySelector(".idref a")){
-                    // If couldn't find any IDs look to two parents upwards
-                    root = parent.parentNode.parentNode
+                    // If couldn't find any ID look to whole row
+                    root = parent.closest("tr")
                 }
 
                 root.querySelectorAll(".idref a").forEach((el) => {
