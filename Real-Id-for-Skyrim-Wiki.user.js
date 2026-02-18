@@ -75,9 +75,9 @@
 
         if (location.origin == "https://elderscrolls.fandom.com") {
             const categoryReplacement = {
-                "Dawnguard:": "02",
-                "Hearthfire:": "03",
-                "Dragonborn:": "04",
+                "Dawnguard": "02",
+                "Hearthfire": "03",
+                "Dragonborn": "04",
             };
 
             const categoryEl = document.querySelector(".page-header__categories");
@@ -103,3 +103,4 @@
         }
     } catch (e) {console.log(e)}
 })();
+
